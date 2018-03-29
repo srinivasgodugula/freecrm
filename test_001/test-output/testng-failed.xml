@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Free CRM application test automation]">
+  <listeners>
+    <listener class-name="extentreportlistener.ExtentReporterNG"/>
+  </listeners>
+  <test name="Free CRM appication testcases(failed)">
+    <classes>
+      <class name="crm_qa_testcases.Contactspagetest">
+        <methods>
+          <include name="teardown"/>
+          <include name="ValidatenewcontactTest"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- crm_qa_testcases.Contactspagetest -->
+      <class name="crm_qa_testcases.DatadrivenCrmApplication">
+        <methods>
+          <include name="Newcontactlink" invocation-numbers="0 2"/>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- crm_qa_testcases.DatadrivenCrmApplication -->
+      <class name="crm_qa_testcases.HomePageTest">
+        <methods>
+          <include name="VerifyDealslinkTest"/>
+          <include name="Setup"/>
+          <include name="VerifyTaskslinkTest"/>
+          <include name="teardown"/>
+          <include name="VerifycontactslinkTest"/>
+        </methods>
+      </class> <!-- crm_qa_testcases.HomePageTest -->
+    </classes>
+  </test> <!-- Free CRM appication testcases(failed) -->
+</suite> <!-- Failed suite [Free CRM application test automation] -->
